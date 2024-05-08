@@ -1,0 +1,28 @@
+{
+  "name": "swagger_sample",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --open",
+    "codegen:java": "mkdirp ./dist/java && swagger-codegen generate -i ./src/api-spec.json -l java -o ./dist/java"
+  },
+  "dependencies": {
+    "css-loader": "^7.1.1",
+    "express": "^4.19.2",
+    "json-loader": "^0.5.7",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^5.0.5",
+    "style-loader": "^4.0.0",
+    "swagger-codegen": "^0.1.1",
+    "swagger-ui": "^5.17.6"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
